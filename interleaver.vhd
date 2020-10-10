@@ -88,34 +88,5 @@ process(clk)
         end if;
 end process;
 
-----Accumulator
---process(clk2)
---    begin
---        if (rising_edge(clk2)) then
---            if (clk2 = '0') then
---                pf_temp <= add_out(15)&add_out;
---                output_pf <= std_logic_vector(pf_temp);
-                
---            end if; 
---        end if;    
---end process;
-
-----Blend
---process(clk)
---    begin   
---        if (rising_edge(clk)) then
---            pf <= output_pf;
---        end if;    
---end process;
-
---process(clk,rst)
---    begin
---        if(rising_edge(clk)) then
---            temp0 <= signed(p0)*signed(alpha);
---            temp1 <= signed(p1)*(ones-signed(alpha));
---            pf_temp <= (temp0(15)&temp0) + (temp1(15)&temp1)/ones;
---            pf <= std_logic_vector(pf_temp);
---        end if;
---end process;
 
 end Behavioral;
